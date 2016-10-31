@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body ng-app>
+<div ng-init="employees=[
+{name: 'deepthi', gender: 'female' , city:'hyderabad'},
+{name: 'lakshmi', gender: 'female' , city:'hyderabad'},
+{name: 'nukala', gender: 'female' , city:'hyderabad'}
+]"></div>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>gender</th>
+<th>city</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="employee in employees">
+<td>{{employee.name}}</td>
+<td>{{employee.gender}}</td>
+<td>{{employee.city}}</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
